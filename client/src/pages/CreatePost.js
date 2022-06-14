@@ -23,13 +23,14 @@ function CreatePost() {
     title: Yup.string().required("You must input a Title!"),
     postText: Yup.string().required(),
   });
-
+  //# 게시글(Create)_1 : 작성한 게시글을 토큰을 싣어서 서버로 보내준다.
   const onSubmit = (data) => {
     axios
       .post("http://localhost:3001/posts", data, {
         headers: { accessToken: localStorage.getItem("accessToken") },
       })
       .then((response) => {
+        //# 게시글(Create)_5 : 게시글을 DB에 저장하는데 성공했다면 메인페이지로 간다.
         history.push("/");
       });
   };

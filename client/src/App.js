@@ -39,8 +39,9 @@ function App() {
         }
       });
   }, []);
-
+  
   const logout = () => {
+    //# 로그아웃_1 : 클라이언트에서 토큰 지우기 (END)
     localStorage.removeItem("accessToken");
     setAuthState({ username: "", id: 0, status: false });
   };

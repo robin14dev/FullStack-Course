@@ -14,6 +14,7 @@ function Registration() {
     password: Yup.string().min(4).max(20).required(),
   });
 
+  //# 회원가입_1 : 회원가입시 입력한 정보를 서버에 보내준다.
   const onSubmit = (data) => {
     axios.post("http://localhost:3001/auth", data).then(() => {
       console.log(data);
