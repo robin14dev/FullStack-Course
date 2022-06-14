@@ -1,5 +1,10 @@
 - vscode 돋보기 버튼 클릭해서 아래 주석 그대로 하나씩 복사하시면 빠르게 확인하실 수 있습니다.
 
+# Setting
+- server에 node_module 올라가져 있는데 삭제하시고 npm install 다시 해주세요
+- server/config/config.json 확인하셔서 development 속한 db 생성, 설정해주시면 됩니다.
+
+
 # 인증
 
 - //# 회원가입
